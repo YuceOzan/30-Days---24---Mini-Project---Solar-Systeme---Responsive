@@ -1,0 +1,101 @@
+#title {
+    color: white;
+    font-size: 44px;
+    margin-top: 4rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 10rem auto;
+}
+
+.container2 {
+    max-width: 1000px;
+    background-color: rgba(128, 121, 121, 0.39);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.container3 {
+    margin: auto;
+    height: 220px;
+    width: 220px;
+    background-color: #0e0d0d71;
+    border-radius: 100%;
+    display: none;
+}
+
+.container4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 90%;
+    max-width: 500px;
+    color: white;
+    font-size: 25px;
+    background-color: rgba(147, 150, 149, 0.397);
+}
+
+input[type="number"],
+#weight,
+#planet,
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    padding-top: 25%;
+    font-weight: bold;
+    color: white;
+    font-size: 27px;
+}
+
+body {
+    text-align: center;
+    background-image: url(./images/galaxy.gif);
+}
+
+#planetImages {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #planetImages {
+        order: -1;
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .container3 {
+        display: block;
+        margin-top: 20px;
+    }
+}
